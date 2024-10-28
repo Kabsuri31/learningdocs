@@ -1,39 +1,40 @@
-        Primitive types
+    Primitive types
+
 string      
 bool    
 number      
 
-variable "name"{        
+```variable "name"{        
     type = string     
     default = "xyz"           
-}       
+}  ```      
 
-        collection
+    collection
 
 list  ( ordered collection can be accessed by indices)            
-variable "lst"{
+```variable "lst"{
     type = list(string)
     default = [ "","" ]
-}
+}```
 
 
 set  (unique list of elements)          
-variable "lsttpl"{
+```variable "lsttpl"{
     type = tuple([string,number])
     default =  ["",4]
-}       
+} ```      
 
 
 map                 
-variable "mpvariable"{
+```variable "mpvariable"{
     type = map(string)
     default = {
         name = "dev",
         last = "singh"
     }
-}           
+}```           
 object                   
-variable "obj"{
+```variable "obj"{
     type = object({
         name = string,
         age  = number
@@ -42,6 +43,6 @@ variable "obj"{
         name = "",
         age = 2
     }
-}
+}```
 
 
