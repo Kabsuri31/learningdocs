@@ -1,0 +1,20 @@
+site_name: My Documentation
+theme: readthedocs
+nav:
+  - Home: index.md
+  - devops:
+    - Jenkins:
+      - Home: devops/jenkins/jenkins.md
+      - Agent: devops/jenkins/agents.md
+      - Error: devops/jenkins/handling.md
+      - conditions: devops/jenkins/conditions.md
+      - security: devops/jenkins/security.md
+      - plugin: devops/jenkins/plugin.md
+    - aws:
+      - services: devops/aws/services.md
+    - terraform:
+      - collection: devops/terraform/collection.md
+extra_css:
+  - /assets/stylesheets/custom.css
+
+
